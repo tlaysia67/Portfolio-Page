@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <style type="text/css"></style>
+	    <title id="title">My Profile page</title>
+    </head>
+   
+    <body>
+        
+        <nav id="navbar">
+            <div class="LBcontainer row">
+                <a class="buttons" href="#homeAnchor"><img src="LIGHT-HOME.png" class="light" ALT="HOME" ID="HOME"><img src="DARK-HOME.png" class="dark"ALT="HOME" ID="HOME"></a>
+
+                <a class="buttons" href="#projects"><img src="LIGHT-WEB-SITES.png" class="light" ALT="websites" ID="websites"><img src="DARK-WEB-SITES.png" class="dark" ALT="websites" ID="websites"></a>
+
+                <a class="buttons" href="resume.pdf" target="_blank"><img src="LIGHT-RESUME.png" class="light" ALT="RESUME" ID="RESUME"><img src="DARK-RESUME.png" class="dark" ALT="RESUME" ID="RESUME"></a>
+
+                 <!-- <a class="buttons" href="#poetryAnchor"><img src="LIGHT-POETRY.png" class="light" ALT="POETRY" ID="POETRY"><img src="DARK-POETRY.png" class="dark" ALT="POETRY" ID="POETRY"></a> -->
+<!-- 
+                <a class="buttons" href="#craftsAnchor"><img src="LIGHT-CUSTOM-CRAFTS.png" class="light" ALT="crafts" ID="crafts"><img src="DARK-CUSTOM-CRAFTS.png" class="dark" ALT="crafts" ID="crafts"></a> -->
+
+                <a class="buttons" href="#contactAnchor"><img src="LIGHT-CONTACT.png" class="light" ALT="CONTACT" ID="CONTACT"><img src="DARK-CONTACT.png" class="dark" ALT="CONTACT" ID="CONTACT"></a> 
+            </div>
+        </nav>
+    <div id="wrapper">
+        <section id="welcome-section">
+            <div class="anchorDiv">
+                <a id="homeAnchor" class="anchor"></a>
+            </div>
+            <div class="row">
+                <h1>Welcome to My Site.</h1>
+                <div class="titles">
+                    <img src="me.jpg" alt="my picture" class="myphoto">
+                    <div>    
+                        <h2 class="name">Lynn &nbsp; M. &nbsp; Root</h2>
+                        <a href="https://github.com/tlaysia67/Portfolio-Page" target="_blank" rel="noopener" rel="noreferrer" id="profile-link">My GitHub Link</a>   
+                        <p id="bio"> Admin. Assist / Assembler / Packer 
+                        <br />Amateur Graphic / Website / Needlepoint Designer<br />Custom Cross-stitch and Crochet projects
+                        </p>
+                    </div>
+                </div>
+            <img src="star trek divider_delta.gif" id="stbar">
+            </div>
+        </section>
+        <main>         
+        <section id="projects">
+            <div class="anchorDiv">
+                <a id="websitesAnchor" class="anchor"></a>
+            </div>
+            <div class="row"> 
+                <h2 class="name">My Website Projects</h2>
+            </div>
+                <div class="row">
+                    <div class="project-tile">
+                        <p>Dr. Suess Tribute Page</p>
+                        <a href="https://drseusstribute.netlify.app" target="_blank" rel="noopener" rel="noreferrer">
+                        <img src="Suess-Project-tile.jpg" alt="Dr. Suess Tribute Page">   
+                        </a>    
+                    </div>
+                    <div class="project-tile">
+                        <p>Technical Documentation Page</p>
+                        <a href="https://technical-doc-page.netlify.app" target="_blank" rel="noopener" rel="noreferrer">
+                        <img src="tech-doc-pg.jpg" alt="Technical Documentation Page">    
+                        </a>    
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="project-tile">
+                        <p>Product Landing Page</p>
+                        <a href="https://product-landing-site-crochet.netlify.app/" target="_blank" rel="noopener" rel="noreferrer">
+                        <img src="product-landing-pg.jpg" alt="Product Landing Page">    
+                        </a>    
+                    </div>
+                    <div class="project-tile">
+                        <p>Omni Food Site</p>
+                        <a href="https://my-omni-food-site.netlify.app/" target="_blank" rel="noopener" rel="noreferrer">
+                        <img src="omni-foods-pg.jpg" alt="Omni Food Site">    
+                        </a> 
+                    </div>    
+                </div>      
+                <!-- <div class="project-tile" >
+                    <p>Shopping Survey</p>
+                    <a href="https://shopping-survey-form.netlify.app/" target="_blank" rel="noopener" rel="noreferrer">
+                    <img src="shopping-su           rvey.jpg" alt="Shopping Survey">    
+                    </a>    
+                </div> -->
+                <span class="divider"></span>
+        </section>
+
+        </main>         
+        <section id="contact-page">
+            <div class="anchorDiv">
+                <a id="contactAnchor" class="anchor"></a>
+            </div>
+            <!-- <div class="row col span 1 of 2">  -->
+                <h2 class="name">Let's Explore the Opportunites!</h2>
+                   <p id="p1">I look forward to hearing from you</p>
+                <form method="post" action="" id="contact">
+        <!--NAME, EMAIL, NUMBER, # of Days-->
+            <!-- <div class="beginning"> -->
+                    <label for="contact-name" id="label">Your Name:</label>
+                        <input type="text" id="contact-name" name="contact-name" placeholder="Please enter your name" size="90px" maxlength="700px" required>
+                    <br />
+                    <label for="company" id="label">Compnay Name:</label>
+                        <input type="text" 
+                        id="company" 
+                        name="company" 
+                        placeholder="Please enter your company name" 
+                        size="30px" maxlength="700px" required>
+                    <br />
+                    <label for="client" id="label">client's Name:</label>
+                        <input type="text" 
+                        id="client" 
+                        name="client" 
+                        placeholder="Please enter your client name" 
+                        size="30px" maxlength="700px" required>
+                    <br />
+                    <label for="email" id="label">Email</label>
+                        <input type="email" 
+                        id="email" 
+                        name="email" required 
+                        placeholder="A valid E-mail address is required" size="30px" maxlength="700px">
+                    <br />
+                    <label for="phone-number" id="label">Phone Number</label>
+                        <input type="tel" 
+                        id="phone-number" required
+                        placeholder="111-222-3333"                       
+                        name="phone-number" 
+                        maxlength="700px" > 
+                    <br />
+            <!--comments -->
+                    <p id="comment">Please Tell Me More About This Opportunity</p>
+                    <br />
+                    <span id="textarea" role="textbox" contenteditable>Please Leave Comments Here</span>
+                    <br />
+                    <br />
+                    <input type="submit" id="submit" name="submit">
+                </form>
+            </section>
+            <footer>
+                <div class="row">
+                    <p>Copyright &copy; 2015 </p>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="facebook"><ion-icon name="logo-facebook"></ion-icon></i></a></li>
+                        
+                        <li><a href="#"><i class="goggle"><ion-icon name="logo-google"></ion-icon></i></a></li>
+                    </ul>
+                </div>   
+            </footer>   
+    </div> 
+     
+    </body>
+
+
+ <!-------- footer -------------------------------------------------------->   
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import "compass/css3";
+
+/* Start of text3d mixin */
+@mixin text3d ($color: #ffd300, $x: 1, $y: -1,  $darken: 1) {
+	color: $color;
+	text-shadow: 0px 0px 0 darken($color, 14%),
+				$x* 1px $y* 1px 0 darken($color, $darken * 15),
+				$x* 2px $y* 2px 0 darken($color, $darken * 16),
+				$x* 3px $y* 3px 0 darken($color, $darken * 17),
+				$x* 4px $y* 4px 0 darken($color, $darken * 18),
+				$x* 5px $y* 5px 0 darken($color, $darken * 19),
+				$x* 6px $y* 6px 0 darken($color, $darken * 20),
+				$x* 7px $y* 7px 0 darken($color, $darken * 21),
+				$x* 8px $y* 8px 0 darken($color, $darken * 22),
+				$x* 9px $y* 9px 0 darken($color, $darken * 23),
+				$x* 10px $y* 10px 0 darken($color, $darken * 24),
+				$x* 11px $y* 11px 0 darken($color, $darken * 25), 
+				$x* 12px $y* 12px 0 darken($color, $darken * 26),
+				$x* 13px $y* 13px 12px rgba(0,0,0,0.55), 
+				$x* 13px $y* 13px 1px rgba(0,0,0,0.5);
+}
+/* End of text3d mixin */
+
+/*
+Mixin accepts values:
+[color of the font],
+[x-direction from -1 to 1 in 0.1 increments],
+[y-direction from -1 to 1 in 0.1 increments],
+[shading values from 0.1 to 2 in 0.1 increments]
+
+see char16 for example of full usage
+*/
+
+.char2, .char14 {@include text3d  (#c44032);}
+.char3, .char13 {@include text3d  (#e36b23);}
+.char5, .char12  {@include text3d  (#ffd300);}
+.char6, .char11 {@include text3d  (#5da028);}
+.char7, .char10  {@include text3d  (#4584be);}
+.char8 {@include text3d  (#7073cf);}
+
+.char16 {@include text3d  (#c44032, -0.5, -1, 1.3);} 
+
+
+body {
+ background-color: #7abcff;
+ font-family: impact, arial; 
+	height: 100%;
+ text-align: center;
+	width: 100%;
+}
+
+#text {
+	font-size: 8em;
+ font-weight: bold; 
+ margin-top: 1em;
+	text-transform: uppercase;
+}
+
+p, a { 
+  color: #fff;
+  font-family: impact, arial;
+  text-shadow: 1px 1px 1px rgba(black, 0.6);
+  font-size: 1.6em;
+  text-align: center;
+  text-decoration: none;
+}
+
+	</style>
+</head>
+<body>
+	<div id="text">
+		3d text mixin !
+		</div>  
+		<a href="https://twitter.com/darby-brown"  target="_blank">a scss mixin by @darbybrown</a>
+	<script>
+		$('#text').lettering()
+
+/*Contact
+
+Email: hugo@darbybrown.com
+Twitter: https://twitter.com/darbybrown
+Website: Coming Soon
+
+Fork the mixin on github:
+https://github.com/DarbyBrown/Scss-3D-Text-Mixin
+
+*/
+	</script>
+</body>
+</html><!--3d colored text.html-->
+
+
+

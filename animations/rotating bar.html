@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+  transition: all ease-in-out 3s;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+
+}
+h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.divWrapper {
+  display: block;
+  position: relative;
+  top: 50%;
+  width: 100vw;
+  height: 80px;
+  perspective: 1000px;
+}
+
+.divActiveContainer {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-style: preserve-3d;
+
+  text-align: center;
+  
+  animation: turn 2s infinite;
+}
+
+.divActiveContainer > a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 1px solid;
+}
+#aInput {
+  transform: rotateX(-90deg);
+}
+#aTag {
+  transform: rotateX(0deg);
+}
+
+@keyframes turn {
+  0% {transform: rotateX(0deg) translateX(-50%);}
+  25% {transform: rotateX(90deg) translateX(-50%);}
+  50% {transform: rotateX(180deg) translateX(-50%);}
+  75% {transform: rotateX(270deg) translateX(-50%);}
+  100% {transform: rotateX(360deg) translateX(-50%);}
+}
+
+  </style>
+</head>
+<body>
+  
+</body>
+</html><!--rotating bar-->
+
+<body>
+  <h1>Which way is this rotating ? <br />Move your head towards corners </h1>
+  <div class="divWrapper">
+    <div class="divActiveContainer">
+      <a id="aTag" class="btn pink waves-effect waves-light"></a>
+      <a id="aInput" class="btn waves-effect waves-light"></a>
+    </div>
+  </div>
+</body>
+
+<!--rotating bar-->

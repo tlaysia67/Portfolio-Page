@@ -1,0 +1,375 @@
+/*--------------------------
+ profile page
+-----------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+
+.row {
+    width: 1000px;
+    margin: 0 auto;
+}
+#wrapper {
+    position:fixed;
+    top: 135px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 135px);
+    width: 100vw;
+}
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Almendra','lato', 'arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    padding-top: 135px;
+    background-image: url(swirl-sqr-lg-BLURRED.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+/* #bodybkgrd {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+} */
+
+ @font-face {
+    font-family: Almendra;
+    src: url(AlmendraSC-Regular.ttf);
+}
+ @font-face {   
+    font-family: Courgette;
+    src: url(courgette-Regular.ttf);    
+}
+
+p {
+    margin: 0;
+}
+
+#p1 {
+    color: purple;
+    font-size: 22px;
+    display: block;
+    margin: 0 auto 20px auto;
+    text-align: center;
+
+    
+}
+
+.divider { 
+    display: block;
+    margin: 50px auto;
+    height: 10px;
+    width: 1000px;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+
+/*--------------------------
+NAV BAR BUTTONS
+-----------------------------*/
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.LBcontainer {
+    max-width: 800px;
+    padding:0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+ 
+
+}
+.dark {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: rotateY(-90deg);
+    transition: .25s;
+}
+
+
+.buttons {
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    height: 100px;
+    width: 135px;
+    outline: none;
+    position: relative;
+    display: inline-block;
+}
+
+.buttons .light {
+    transition: .25s;
+    transition-delay: .25s;
+}
+
+.buttons img{
+    height: 100px;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+}
+ 
+.buttons:hover .light {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+
+.buttons:hover .dark{
+    transform: rotateY(0);
+    transition-delay: 0.25s;
+}
+
+.buttons:active .dark {
+    transform: scale(.8);
+    transition-delay: 0s;
+}
+
+
+/* @keyframes LBrotate {
+    0% {display: block; transform: rotateY(0)}
+    80%
+	100% {display: none; transform: rotateY(90deg)}
+}
+
+@keyframes DBrotate {
+	from {display:none; transform: rotateY(90deg)}
+	to {display: block; transform: rotateY(0)}
+} */
+
+/*--------------------------
+ HEADINGS attributes
+-----------------------------*/
+h1 {
+    margin: 0 auto;
+    text-align:center;
+    font-size:100px;
+    -webkit-text-stroke: 2px black;
+    color:#6a66f3;
+    position: relative;
+    left: 10px;
+    text-shadow:
+    -1px 1px 1px #c4dbe2,
+    -2px 2px 1px #b4d1d9,
+    -3px 3px 1px #a6c6cf,
+    -4px 4px 1px #94b8c3,
+    -5px 5px 1px #87aeb9,
+    -6px 6px 1px #7aa3af,
+    -7px 7px 1px #6d97a3,
+    -8px 8px 1px #618b98,
+    -9px 9px 1px #56818e,
+    -10px 10px 0px #4c7683,
+    -15px 15px 25px rgba(0,0,0,.9);
+    transition: .5s ease-in-out;
+}
+
+h1:hover {
+	left:10px;
+    text-shadow:
+    1px -1px 0px #f3b6ae,
+    2px -2px 0px #f3b6ae,
+    3px -3px 1px #f3b6ae,
+    4px -4px 1px #f7a8a5,
+    5px -5px 1px #f7a8a5,
+    6px -6px 1px #f7a8a5,
+    7px -7px 1px #f88b87,
+    8px -8px 1px #fa9996,
+    9px -9px 1px #f77d79,
+    10px -10px 0px #f77d79,
+    15px 15px 25px rgba(0,0,0,.9);
+    transform: translate(-10px, 10px);
+}
+
+h2 {
+    text-align: center;
+}
+
+#welcome-section {
+    font-family: Almendra;
+    text-align: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.titles {
+    display:flex;
+    justify-content: space-between;
+    width:850px;
+    margin:30px auto 30px auto;
+    height: calc(100vh - 450px);
+    align-items: center;
+}
+
+#profile-link {
+    font-size: 20px;
+}
+
+.name {
+    font-size: 60px;    
+    padding-bottom: 20px;
+    color: purple;
+}
+  
+#bio {
+    font-size: 20px;
+    padding:10px;
+    color: black;
+  }
+
+.myphoto {
+    border-radius: 40%;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    overflow: hidden;
+    padding: 3px;
+  
+}
+
+#stbar {
+    width: 1000px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-bottom: 20px;
+    transform: translateX(-50%);
+
+}
+
+
+#projects {
+    height: 100vh;
+}
+
+.project-tile img {
+    height: 300px;
+    width: 450px;
+}
+
+.project-tile {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+#contact-page {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+#contact {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+#label {
+    font-size: 20px;
+}
+#contact input[type='text'], [type='email'] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: solid 3px purple;
+    border-radius: 10px 30px;
+    font-family: 'Almendra','lato', 'arial', sans-serif;
+}
+#contact input[type="tel"], [type="submit"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: solid 3px purple;
+    border-radius: 10px 30px;
+    font-family: 'Almendra','lato', 'arial', sans-serif;
+}
+
+#contact input[type="submit"] {
+    font-size: 20px;
+}
+
+#textarea {
+    width: 700px;
+    padding: 12px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border: solid 3px purple;
+    border-radius: 10px 40px;
+    font-size:  16px;
+    background-color: white;
+}
+ 
+#comment {
+    font-size: 20px;
+    border: 0;
+    padding: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
