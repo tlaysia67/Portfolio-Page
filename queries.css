@@ -1,0 +1,67 @@
+@media only screen and (min-width: 1000px) {
+    
+}
+
+
+
+/*small phones: from 0 to 962px*/
+@media only screen and (max-width: 965px){
+    #projects { height: auto; }
+    #welcome-section { height: auto; }
+    #contact-page { height: auto; } 
+}
+
+/*small phones: from 0 to 900px*/
+@media only screen and (max-width: 900px) {
+    /* #projects{margin: 0 auto 0 auto;} */
+    h1 { font-size:75px; }
+    .myphoto { height:200px; width: 200px; 
+            margin-left: 5px;} 
+    .titles { flex-direction: column; 
+            height: auto;}
+    .projects-tile { margin: 0 auto;}
+    .name1 { font-size: 40px;}
+}
+
+/*small phones: from 0 to 690px*/
+@media only screen and (max-width: 650px) {
+    #contact { max-width: 650px; }
+    #textarea, #contact input{ max-width: 650px; 
+        margin: 0 5px 10px 5px;} 
+    h1 { font-size: 50px; }  
+    .buttons img{ height:75px; }
+    .name {font-size: 30px;}
+    p { font-size: 20px;}
+    #p1 { font-size: 18px;}
+    #profile-link, #bio{font-size: 16px;}
+}
+
+
+/*small phones: from 0 to 590x*/
+@media only screen and (max-width: 590px) {
+    .name1 { font-size: 30px;}
+
+}
+/*small phones: from 0 to 490x*/
+@media only screen and (max-width: 450px) {
+    #wrapper { top: 110px;}
+    #label { font-size: 15px;}
+
+}
+
+
+
+/*small phones: from 0 to 370px*/
+@media only screen and (max-width: 380px) {
+    .buttons img{ height:50px; }
+    #label { font-size: 15px; }
+    #wrapper { top: 85px;}
+    h1 { font-size: 25px; }
+}
+
+
+
+
+
+
+/* text area not re-sizing right 
