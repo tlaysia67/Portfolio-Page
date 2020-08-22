@@ -47,7 +47,7 @@
     #label { font-size: 15px;}
     .name1 { font-size: 20px;}
     h1 { font-size: 30px; }
-    .buttons img{ height:40px; }
+    .buttons img{ height:50px; }
     .buttons { margin-top: 5px; }
     .project-tile img { height:150; width:90vw;}
 }
@@ -55,12 +55,17 @@
 
 /* 
 /*small phones: from 0 to 370px*/
-/* @media only screen and (max-width: 380px) {
+@media only screen and (max-width: 380px) {
     .buttons img{ height:50px; }
-    #label { font-size: 15px; }
+    
+    /* #label { font-size: 15px; }
     #wrapper { top: 85px;}
     h1 { font-size: 25px; } */
-} */
+} 
+@media only screen and (max-width: 320px) {
+    .buttons img{ height:40px; }
+    .myphoto { height: 150px; width: 150px;}
+}
 
 
 
