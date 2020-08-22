@@ -1,8 +1,6 @@
 @media only screen and (min-width: 1000px) {
-    
+
 }
-
-
 
 /*small phones: from 0 to 962px*/
 @media only screen and (max-width: 965px){
@@ -20,9 +18,9 @@
     .titles { flex-direction: column; 
             height: auto;}
     .projects-tile { margin: 0 auto;}
-    .name1 { font-size: 40px;}
+    .name1, .name{ font-size: 40px;}
 }
-
+ 
 /*small phones: from 0 to 690px*/
 @media only screen and (max-width: 650px) {
     #contact { max-width: 650px; }
@@ -43,21 +41,25 @@
 
 }
 /*small phones: from 0 to 490x*/
-@media only screen and (max-width: 450px) {
-    #wrapper { top: 110px;}
+@media only screen and (max-width: 470px) {
+    #wrapper { top: 70px;}
     #label { font-size: 15px;}
-
+    .name1 { font-size: 20px;}
+    h1 { font-size: 30px; }
+    .buttons img{ height:40px; }
+    .buttons { margin-top: 5px; }
+    .project-tile img { height:150; width:90vw;}
 }
 
 
-
+/* 
 /*small phones: from 0 to 370px*/
-@media only screen and (max-width: 380px) {
+/* @media only screen and (max-width: 380px) {
     .buttons img{ height:50px; }
     #label { font-size: 15px; }
     #wrapper { top: 85px;}
-    h1 { font-size: 25px; }
-}
+    h1 { font-size: 25px; } */
+} */
 
 
 

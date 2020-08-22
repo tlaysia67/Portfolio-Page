@@ -23,9 +23,9 @@ html {
     top: 135px;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: calc(100vh - 235px);
+    height: calc(100vh - 435px);
     width: 100vw;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
 }
 body {
     width: 100%;
@@ -156,17 +156,7 @@ NAV BAR BUTTONS
     transform: scale(.8);
     transition-delay: 0s;
 }
-/*above code worked better
-/* @keyframes LBrotate {
-    0% {display: block; transform: rotateY(0)}
-    80%
-	100% {display: none; transform: rotateY(90deg)}
-}
 
-@keyframes DBrotate {
-	from {display:none; transform: rotateY(90deg)}
-	to {display: block; transform: rotateY(0)}
-} */
 
 /*--------------------------
  HEADINGS attributes
@@ -270,14 +260,13 @@ h2 {
 .project-tile img {
     height: 300px;
     width: 450px;
+
 }
 
 .project-tile {
     font-size: 30px;
-    margin: 10px auto 0 auto;
-    /* margin-top: 10px;
-    margin-left: 30px; */
-    width: 450px;
+    margin: 10px 10px 0 10px;
+    width: auto;
     height: auto;
     text-align: center;
     display: inline-block;
@@ -295,8 +284,6 @@ h2 {
     margin:0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* margin: 0 auto; */
 }
 
 #label {
@@ -350,7 +337,25 @@ h2 {
 footer {
     position: relative;
     top: 100vh;
-    margin-top: 50px;
-    height:100px;
-    
+    margin-top: 60px auto 0 auto;
+    height: 200px;
+    width: 100vw;
+    max-width: 1000px; 
+    display: flex;
+    justify-content: space-around; 
+}
+
+#portal-link {
+    margin-top: 60px auto 0 auto;    
+}
+
+#portalAnchor {
+    position: relative;
+    bottom:30px; 
+}
+
+.footer {
+    display: flex;
+    flex: 0 1 auto;
+    margin: 0 auto;
 }
